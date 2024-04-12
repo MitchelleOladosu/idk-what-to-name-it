@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(white, blue) ;
+    background: linear-gradient(white, purple) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -10,7 +10,7 @@ body {
     
     border: none;
 
-    background-color: green;
+    background-color: lightgreen;
     
     color:  black;
 
@@ -31,13 +31,13 @@ body {
 }
 
 .place-order-btn:hover {
-    background-color: bisque;
+    background-color: white;
 }
 
 .notify-btn {
     border: none;
 
-    background-color: green;
+    background-color: lightgoldenrodyellow;
     
     color:  black;
 
@@ -57,13 +57,13 @@ body {
 }
 
 .notify-btn:hover {
-    background-color: bisque
+    background-color: white
 }
 
 .preorder-btn {
     border: none;
 
-    background-color: red;
+    background-color: lightgoldenrodyellow;
     
     color:  black;
 
@@ -79,11 +79,11 @@ body {
 
     cursor: pointer;
     
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .preorder-btn:hover {
-    background-color: bisque
+    background-color: white
 }
 
 .responsive-table {

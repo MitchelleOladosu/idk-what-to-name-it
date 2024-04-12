@@ -9,6 +9,8 @@ body {
 .place-order-btn {
     
     border: none;
+
+    background-color: green;
     
     color:  black;
 
@@ -24,16 +26,18 @@ body {
 
     cursor: pointer;
     
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 
 .place-order-btn:hover {
-    background-color: bisque
+    background-color: bisque;
 }
 
 .notify-btn {
-     border: none;
+    border: none;
+
+    background-color: green;
     
     color:  black;
 
@@ -49,7 +53,7 @@ body {
 
     cursor: pointer;
     
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .notify-btn:hover {
@@ -57,7 +61,9 @@ body {
 }
 
 .preorder-btn {
-     border: none;
+    border: none;
+
+    background-color: red;
     
     color:  black;
 

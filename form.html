@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomerForm</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .company-section {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .company-name {
+            font-family: 'Roboto Condensed';
+            font-size: 100px;
+            color: thistle;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .star-emoji {
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+            color: thistle;
+        }
+
+        .motto {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+
+        input {
+            width: 485px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .button-container input {
+            width: 100px;
+            color: black;
+            background-color: pink;
+        }
+
+        form div {
+            align-items: center;
+            margin-bottom: 0px;
+
+        }
+
+        input,
+        select {
+            border: transparent;
+        }
+
+        select {
+            width: 500px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .checkbox-container label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url('https://i.pinimg.com/564x/fd/af/6e/fdaf6eec277f9abba5f50993e58ead50.jpg'); color: pink; padding: 20px">
+
+    <div class="company-section">
+        <h1 class="company-name">STARRY SKIES</h1>
+        <p class="star-emoji">&#9733;&#9733;&#9733;&#9733;&#9733; </p>
+        <p class="motto">Where Dreams Take Flight and Luxury Beckons</p>
+    </div>
+
+    <hr />
+
+    <div>
+        <h1 style="text-align: center;">Customer Registration Form</h1>
+        <p style="text-align: center;">Register for Your Mall Membership Today, Unlock Exclusive Perks & Rewards!!!</p>
+    </div>
+
+    <div class="form-container">
+        <form id="customerForm" action="redirect-page.html" method="post">
+            <div style="font-weight: 1000">
+                <label for="Title" style="width: 150px" class="form-label">Title:</label>
+
+                <select id="Title" name="Title" required>
+                    <option value="" disabled selected>Select a title</option>
+                    <option value="option1">Mr</option>
+                    <option value="option2">Mrs</option>
+                    <option value="option3">Ms</option>
+                    <option value="option4">PhD</option>
+                </select>
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="Firstname" style="width: 150px">First name:</label>
+                <input type="text" id="Firstname" name="Firstname" placeholder="Enter your first name" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="Middlename" style="width: 150px">Middle name:</label>
+                <input type="text" id="Middlename" name="Middlename" placeholder="Enter your middle name" />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="Lastname" style="width: 150px">Last name:</label>
+                <input type="text" id="Lastname" name="Lastname" placeholder="Enter your last name" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="DateOfBirth" style="width: 150px">Date of birth:</label>
+                <input type="date" id="DateOfBirth" name="Dateofbirth" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="Username" style="width: 150px">Username:</label>
+                <input type="text" id="Username" name="Username" pattern="[a-zA-Z0-9]{4,}"
+                    placeholder="Enter your username" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="Location" style="width: 150px">Location:</label>
+                <input type="text" id="Location" name="Location" placeholder="City and country" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="EmailAddress" style="width: 150px">Email:</label>
+                <input type="email" id="EmailAddress" name="Emailaddress" placeholder="yourname@gmail.com" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="MobileNumber" style="width: 150px">Mobile number:</label>
+                <input type="tel" id="MobileNumber" name="Mobilenumber" placeholder="(123)456-7890" required />
+            </div>
+
+            <br />
+
+            <div style="font-weight: 1000">
+                <label for="password" style="width: 150px">Password:</label>
+                <input type="Password" id="password" name="password" placeholder="Create password" minlength="8"
+                    maxlength="20" required />
+            </div>
+
+            <br />
+
+            <hr />
+
+            <div class="checkbox-container" style="color: blanchedalmond;">
+                <input type="checkbox" id="consentCheckbox" name="consent" style="margin-right: 5px;" required />
+                <label for="consentCheckbox" class="checkbox-container">I consent to providing my personal information
+                    for the
+                    purpose of completing this customer form and certify that the information provided is accurate and
+                    truthful.</label>
+            </div>
+
+            <p style="font-style: italic; color: blanchedalmond">
+                Please check the box to indicate your consent. We value your
+                privacy and only use your information for relevant communication.
+            </p>
+
+
+            <br />
+
+            <div class="button-container" style="padding: 5px; font-size: 5px">
+                <input type="Reset" value="Reset" />
+                <input type="Submit" value="Submit" onclick="confirmSubmit()" />
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("customerForm");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (window.confirm("Confirm your data before submitting.😊")) {
+                const formData = new FormData(form);
+                fetch("https://jsonplaceholder.typicode.com/posts", {
+                    method: "POST",
+                    body: formData,
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log("The form has been submitted successfully 😁✅:", data);
+                        alert("Form submitted successfully😁✅");
+
+                        const successMessage = document.createElement("p");
+                        successMessage.textContent = "Form submitted successfully!";
+                        document.body.appendChild(successMessage);
+
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        console.error("Wahala! Error encountered:😒", error);
+                        alert("Wahala! Error encountered:😒");
+                    });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Items</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+    <table class="responsive-table">
+        <caption>Shopping Items</caption>
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Image</th>
+                <th scope="col">Price</th>
+                <th scope="col">Availability</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Item 1">T-Shirt</td>
+                <td><img class="item-image" src="/images/T-shirt.jpeg" alt="Item 1"></td>
+                <td data-label="Price">₦30000</td>
+                <td data-label="Availability">In Stock</td>
+                <td><button class="place-order-btn">Place Order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Item 2">Jeans</td>
+                <td><img src="/images/Jeans.jpeg" alt="Item 2" class="item-image"></td>
+                <td data-label="Price">₦70000</td>
+                <td data-label="Availability">Out of Stock</td>
+                <td data-label="Action">
+                    <button class="notify-btn">Notify Me</button>
+                    <button class="preorder-btn">Pre-order</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td data-label="Item 3">Sneakers</td>
+                <td><img src="/images/Sneakers.jpeg" alt="Item 3" class="item-image"></td>
+                <td data-label="Price">₦200000</td>
+                <td data-label="Availability">In Stock</td>
+                <td><button class="place-order-btn">Place Order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Item 4">Jacket</td>
+                <td><img src="/images/Jacket.jpeg" alt="Item 4" class="item-image"></td>
+                <td data-label="Price">₦100000</td>
+                <td data-label="Availability">In Stock</td>
+                <td><button class="place-order-btn">Place Order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Item 5">Sandals</td>
+                <td><img src="/images/Sandals.jpeg" alt="Item 5" class="item-image"></td>
+                <td data-label="Price">₦10000</td>
+                <td data-label="Availability">Out of Stock</td>
+                <td data-label="Action">
+                    <button class="notify-btn">Notify Me</button>
+                    <button class="preorder-btn">Pre-order</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td data-label="Item 6">Bikini</td>
+                <td><img src="/images/Bikini.jpeg" alt="Item 6" class="item-image"></td>
+                <td data-label="Price">₦40000</td>
+                <td data-label="Availability">In Stock</td>
+                <td><button class="place-order-btn">Place Order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Item 7">Panty hose</td>
+                <td><img src="/images/Pantyhose.jpeg" alt="Item 7" class="item-image"></td>
+                <td data-label="Price">₦10000</td>
+                <td data-label="Availability">Out of Stock</td>
+                <td data-label="Action">
+                    <button class="notify-btn">Notify Me</button>
+                    <button class="preorder-btn">Pre-order</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td data-label="Item 8">Backpack</td>
+                <td><img src="/images/Backpack.jpeg" alt="Item 8" class="item-image"></td>
+                <td data-label="Price">₦10000</td>
+                <td data-label="Availability">Out of Stock</td>
+                <td data-label="Action">
+                    <button class="notify-btn">Notify Me</button>
+                    <button class="preorder-btn">Pre-order</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+</body>
+
+</html>
